@@ -7,7 +7,7 @@ import time
 
 
 
-def check(champion = input('Wprowadź nazwę championa:\n').lower(), mode = input('Wprowadź tryb gry:\n')):
+def check(champion = input('Pick your Champion:\n').lower(), mode = input('Pick your game mode:\n')):
     if len(mode) > 0:
         mode = mode.lower()
     if len(mode) < 1 or mode == 'sr' or mode == 'summonersrift':
