@@ -11,7 +11,7 @@ def check(champion = input('Pick your Champion:\n').lower(), mode = input('Pick 
     if len(mode) > 0:
         mode = mode.lower()
     if len(mode) < 1 or mode == 'sr' or mode == 'summonersrift':
-        PATH = 'C:\Program Files\chromedriver.exe'
+        PATH = 'C:\Program Files\chromedriver.exe' # Enter your chromium location here
         driver = webdriver.Chrome(PATH)
         driver.get(f'https://lolalytics.com/lol/{champion}/build/')
         print(driver.title) 
