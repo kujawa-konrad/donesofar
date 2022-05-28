@@ -1,5 +1,7 @@
 import numpy as np
 
+# This app accepts list of 9 numbers, creates 3x3 NumPy array, then calculates mean, variance, standard deviation, maximum, minimum & sum.
+
 def calculate(inp = list):
 
     leng = len(inp)
