@@ -1,3 +1,5 @@
+# Task done for FreeCodeCamp course
+
 class Category: # Budget app
     def __init__(self, type):
         self.type = type
