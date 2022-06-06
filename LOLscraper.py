@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from PIL import Image
 import time
 
-# This app finds best build for every LOL champion, by scraping lolalytics.com and getting around Riot Games API.
+# This app finds best build for every LOL champion, by scraping lolalytics.com and getting around Riot Games API
 
 def check(champion = input('Pick your Champion:\n').lower(), mode = input('Pick your game mode:\n')):
     if len(mode) > 0:
