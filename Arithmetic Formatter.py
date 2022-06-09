@@ -1,11 +1,8 @@
-# Pomysł jest taki, żeby funkcja najpierw "skanowała" input (listę) użytkownika
-# Czy wszystko wprowadził poprawnie itp i wrzucała wynik oceny w kolejną listę
-# Jak w liście znajdzie się negatywny wynik oceny DOPIERO WTEDY będzie printowany
-# Jak nie będzie żadnych błędów wtedy funkcja policzy i wyprintuje co trzeba
+# Task done for FreeCodeCamp course
 
-# A w ogóle to wszystko można wrzucić w pętlę While True
-# I zamiast continue dać wszędzie break
-# Bo chcemy, żeby w razie Errora funkcja się kończyła 
+# Function accepts two parameters: 
+# List of up to 5 equations (addition or subtraction)
+# Boolean which determines if equations should be solved or not
 
 import re
 
@@ -72,4 +69,4 @@ def arithmetic_formatter(funkcje, b = False):
     return output
 
 
-print(arithmetic_formatter(['356 + 25', '4526 - 8852', '456 + 9999', '500 + 600', '200 - 900'], True))
+# print(arithmetic_formatter(['356 + 25', '4526 - 8852', '456 + 9999', '500 + 600', '200 - 900'], True))
