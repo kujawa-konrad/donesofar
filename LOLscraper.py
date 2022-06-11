@@ -57,6 +57,6 @@ def check(champion = input('Pick your Champion:\n').lower(), mode = input('Pick 
         finally:
             driver.quit()
 
-check()
+check() # Calling the function
 
 
