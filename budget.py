@@ -1,4 +1,5 @@
 # Task done for FreeCodeCamp course
+# Read notes next to each method to learn specifics
 
 class Category: 
     def __init__(self, type):
