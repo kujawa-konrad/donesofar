@@ -1,10 +1,14 @@
 # Task done for FreeCodeCamp course
 
-class Category: # Budget app
+class Category: 
     def __init__(self, type):
         self.type = type
+        
+        # Class has an instance variable called ledger, that is a list
+        
         self.ledger = []
 
+        
     def __repr__(self):
         receipt = ''
         stars = int((30 - len(self.type))/2)*'*'
@@ -29,10 +33,16 @@ class Category: # Budget app
         receipt = title + '\n' + lines + '\n' + f'Total: {total}'
         return receipt
 
-
+    
+    # Accepts an amount and description. If no description is given it defaults to an empty string. The method appends an object to the ledger list
+    
     def deposit(self, amount, description = ''):
         self.ledger.append({"amount": amount, "description": description})
-
+    
+    
+    # Similar to the deposit method, but the amount passed in is stored in the ledger as a negative number. If there are not enough funds, nothing happens. 
+    # This method returns True if the withdrawal took place and False otherwise.
+    
     def withdraw(self, amount, description = ''):
         checker = self.check_funds(amount)
         if checker:
@@ -40,7 +50,10 @@ class Category: # Budget app
             return True
         else:
             return False
-
+    
+    
+    # Returns the current balance of the budget category
+    
     def get_balance(self):
         balance = 0.0
         for item in self.ledger:
@@ -48,7 +61,10 @@ class Category: # Budget app
             balance += val
         return balance
 
-
+    
+    # Accepts an amount and another budget category as arguments, then transfer fund from one to the other.
+    # If there are not enough funds, nothing happens. This method returns True if the transfer took place, and False otherwise.
+    
     def transfer(self, amount, object):
         checker = self.check_funds(amount)
         if checker:
@@ -58,7 +74,10 @@ class Category: # Budget app
         else:
             return False
 
-
+        
+    # Accepts an amount as an argument. 
+    # It returns False if the amount is greater than the balance of the budget category and returns True otherwise.
+    
     def check_funds(self, amount):
         compare = 0.0
         for item in self.ledger:
@@ -69,6 +88,9 @@ class Category: # Budget app
         else:
             return True
 
+        
+# Takes a list of categories as an argument. Returns a string that is a bar chart.
+# The chart shows the percentage spent in each category passed in to the function.
 
 def create_spend_chart(ledger_list):
     sums = []
