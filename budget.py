@@ -1,11 +1,11 @@
-# Task done for FreeCodeCamp course
-# Read notes next to each method to learn specifics
+# Task done for FreeCodeCamp course.
+# Read notes next to each method to learn specifics.
 
 class Category: 
     def __init__(self, type):
         self.type = type
         
-        # Class has an instance variable called ledger, that is a list
+        # Class has an instance variable called ledger, that is a list.
         
         self.ledger = []
 
@@ -35,7 +35,7 @@ class Category:
         return receipt
 
     
-    # Accepts an amount and description. If no description is given it defaults to an empty string. The method appends an object to the ledger list
+    # Accepts an amount and description. If no description is given it defaults to an empty string. The method appends an object to the ledger list.
     
     def deposit(self, amount, description = ''):
         self.ledger.append({"amount": amount, "description": description})
@@ -53,7 +53,7 @@ class Category:
             return False
     
     
-    # Returns the current balance of the budget category
+    # Returns the current balance of the budget category.
     
     def get_balance(self):
         balance = 0.0
