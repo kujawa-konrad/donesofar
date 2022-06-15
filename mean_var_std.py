@@ -1,5 +1,5 @@
 # Task done for FreeCodeCamp course
-# This app accepts list of 9 numbers, creates 3x3 NumPy array, then calculates mean, variance, standard deviation, maximum, minimum & sum.
+# This app accepts list of 9 numbers, creates 3x3 NumPy array, then calculates mean, variance, standard deviation, maximum, minimum & sum (for each axis and total).
 
 import numpy as np
 
