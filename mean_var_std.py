@@ -3,7 +3,6 @@
 
 import numpy as np
 
-
 def calculate(inp = list):
 
     leng = len(inp)
