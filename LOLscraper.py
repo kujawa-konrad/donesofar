@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from PIL import Image
 import time
 
-# This app finds best build for every LOL champion, by scraping lolalytics.com & getting around Riot Games API
+# This app finds best build for every League of Legends champion, by scraping lolalytics.com & getting around Riot Games API
 # Remember to update Chromium
 
 
