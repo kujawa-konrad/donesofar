@@ -10,7 +10,6 @@ import time
 
 
 def check(champion = input('Pick your Champion:\n').lower(), mode = input('Pick your game mode:\n')):
-    
     mode = mode.replace(' ','').lower()
     if len(mode) < 1 or mode == 'sr' or mode == 'summonersrift':
         PATH = 'C:\Program Files\chromedriver.exe' # Enter your chromium location here
