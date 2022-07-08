@@ -6,7 +6,7 @@ from PIL import Image
 import time
 
 # This app finds best build for every League of Legends champion, by scraping lolalytics.com & getting around Riot Games API
-# Remember to update Chromium
+# Remember to update Chromium or change code to use webdriver_manager.chrome
 
 
 def check(champion = input('Pick your Champion:\n').lower(), mode = input('Pick your game mode:\n')):
